@@ -6,4 +6,4 @@ import 距離1196
 距離1196.distance1196()
 with open("xy.csv",mode="w",newline="") as file:
     writer=csv.write(file)
-    writer.writerow([1,2,3])
+    writer.writerow(a)
