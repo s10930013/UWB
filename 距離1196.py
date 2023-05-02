@@ -1,10 +1,12 @@
 import requests
 import time
 import openpyxl
-n=int(input("請輸入偵測次數"))
+import csv
 a={}
 def distance1196():
-    i=0;
+
+    n=int(input("請輸入偵測次數"))
+    i=0
     while  i<n:
         response = requests.get('https://norgay.center/php/vilsnodes.php?loadranging=1&project_id=1')
         str1 = response.text.split('Tag1196')
@@ -16,4 +18,12 @@ def distance1196():
 
         time.sleep(1)
         i+=1
-print(a)
+    print(a)
+distance1196()
+print(a[0])
+r=zip(a)
+with open('xy.csv', "w") as s:
+    w = csv.writer(s)
+    for row in r:
+        w.writerow(row)
+    
