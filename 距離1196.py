@@ -1,10 +1,10 @@
 import requests
 import time
 import openpyxl
-i=0
 n=int(input("請輸入偵測次數"))
 a={}
 def distance1196():
+    i=0
     while  i<n:
         response = requests.get('https://norgay.center/php/vilsnodes.php?loadranging=1&project_id=1')
         str1 = response.text.split('Tag1196')
