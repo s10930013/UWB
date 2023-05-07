@@ -14,9 +14,10 @@ def distance1196():
         str3= str2[5].split('\\')
         print(int(str3[0]))
         a.append(int(str3[0]))
+        d1196=int(str3[0])
 
 
         time.sleep(1)
         i+=1
-    return a
+    return a,d1196,n
     
