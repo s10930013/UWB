@@ -5,7 +5,6 @@ import csv
 a=[]
 def distance1196():
 
-    n=int(input("請輸入偵測次數"))
     i=0
     while  i<n:
         response = requests.get('https://norgay.center/php/vilsnodes.php?loadranging=1&project_id=1')
@@ -19,5 +18,5 @@ def distance1196():
 
         time.sleep(1)
         i+=1
-    return a,d1196,n
+    return a,d1196
     
