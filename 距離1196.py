@@ -1,12 +1,8 @@
 import requests
 import time
-import openpyxl
-import csv
 a=[]
 def distance1196():
-
-    i=0
-    while  i<n:
+    while 1:
         response = requests.get('https://norgay.center/php/vilsnodes.php?loadranging=1&project_id=1')
         str1 = response.text.split('Tag1196')
         str2= str1[1].split('"')
@@ -17,6 +13,5 @@ def distance1196():
 
 
         time.sleep(1)
-        i+=1
     return a,d1196
     
