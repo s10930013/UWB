@@ -1,8 +1,8 @@
-i=0
-n=int(input("請輸入偵測次數"))
-a={}
-while i<n:
-    a[i]=i
-    i+=1
-print(a[1])
-print(a)
+import requests
+import time
+import math
+import openpyxl
+b=math.radians(-30)
+print(b)
+x = 100 * math.sin(b)
+print(x)
