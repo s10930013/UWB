@@ -3,6 +3,8 @@ def a1(x,y):
     # 設定座標點的x, y值
 
     # 繪製座標點圖
+    plt.xlim([0,500])
+    plt.ylim([0,500])
     plt.scatter(x, y)
     save_path = 'example.png'
     plt.savefig(save_path)
