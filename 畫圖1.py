@@ -11,4 +11,4 @@ def a1(x,y):
     plt.clf()
 
     # 顯示圖形
-    #plt.show()1
+    #plt.show()12
