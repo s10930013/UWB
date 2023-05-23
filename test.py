@@ -6,7 +6,7 @@ import os
 import 角度1196
 import 距離1196
 import 座標1196
-import 測試1
+import 畫圖1
 n=int(input("請輸入偵測次數"))
 i=0
 while i<n:
@@ -18,7 +18,7 @@ while i<n:
     ##角度轉弧度a1196=math.radians(a1196)
     x,y=座標1196.xy1196(d1196,a1196)
     print(x+150,y+17)
-    測試1.a1(x,y)
+    畫圖1.a1(x,y)
 
 
     i+=1
