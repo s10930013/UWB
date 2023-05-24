@@ -17,7 +17,7 @@ while i<n:
     #print('4')
     ##角度轉弧度a1196=math.radians(a1196)
     x,y=座標1196.xy1196(d1196,a1196)
-    print(x+150,y+17)
+    print(x,y)
     畫圖1.a1(x,y)
 
 
