@@ -1,10 +1,4 @@
-import requests
-import time
 import math
-import csv
-import openpyxl
-import 角度1196
-import 距離1196
 def xy1196(d1196,a1196):
     
 

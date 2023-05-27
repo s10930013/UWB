@@ -1,10 +1,6 @@
-import requests
-import time
 import math
-import csv
-import openpyxl
-import 角度1225
-import 距離1225
+x1225=[]
+y1225=[]
 def xy1225(d1225,a1225):
     
 
@@ -14,10 +10,11 @@ def xy1225(d1225,a1225):
     y=round(y,2)
     x=x+150
     y=y+17
- 
+    x1225.append(x)
+    y1225.append(y)
 
     
 
     #   print(x,y)
     #  time.sleep(1)
-    return x,y
+    return x,y,x1225,y1225

@@ -1,5 +1,4 @@
 import requests
-import time
 def angle1225():
 
     response = requests.get('https://norgay.center/php/vilsnodes.php?loadranging=1&project_id=1')

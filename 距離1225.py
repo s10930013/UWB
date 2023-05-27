@@ -1,5 +1,4 @@
 import requests
-import time
 a=[]
 def distance1225():
     
@@ -12,6 +11,6 @@ def distance1225():
     d1225=int(str3[0])
 
 
-    # time.sleep(1)
+
     return d1225
     
