@@ -26,7 +26,7 @@ x1196.insert(0, "X座標")
 y1196.insert(0, "Y座標")
 data = list(zip(x1196, y1196))
 
-with open('1196.csv', "w", newline='') as s:
+with open('123.csv', "w", newline='') as s:
     # 創建 CSV 寫入器
     w = csv.writer(s)
 

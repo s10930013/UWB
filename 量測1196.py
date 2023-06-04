@@ -4,6 +4,8 @@ import math
 import openpyxl
 import os
 import csv
+import numpy as np
+import matplotlib.pyplot as plt
 import 角度1196
 import 距離1196
 import 座標1196
@@ -13,7 +15,7 @@ i=0
 while i<n:
     ##角度轉弧度
     a1196=math.radians(角度1196.angle1196())
-    d1196=距離1196.distance1196()
+    d1196,a=距離1196.distance1196()
     x,y,x1196,y1196=座標1196.xy1196(d1196,a1196)
     print(x,y)
     畫圖1.a1(x,y)
@@ -32,4 +34,4 @@ with open('1196.csv', "w", newline='') as s:
 
     # 將配對後的資料逐列寫入 CSV 檔案
     w.writerows(data)
-    
+
