@@ -5,7 +5,7 @@ import openpyxl
 import os
 import csv
 import numpy as np
-import matplotlib.pyplot as plt
+##import matplotlib.pyplot as plt
 import 角度1196
 import 距離1196
 import 座標1196
@@ -19,8 +19,14 @@ while i<n:
     x,y,x1196,y1196=座標1196.xy1196(d1196,a1196)
     print(x,y)
     畫圖1.a1(x,y)
+    
 
+    flag=0
+    
 
+    if x<200 and y<200:
+        flag=1
+        break
     i+=1
     time.sleep(1)
 ##******座標數據儲存******
@@ -35,3 +41,5 @@ with open('1196.csv', "w", newline='') as s:
     # 將配對後的資料逐列寫入 CSV 檔案
     w.writerows(data)
 
+
+print(flag)
