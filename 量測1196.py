@@ -12,6 +12,7 @@ import 座標1196
 import 畫圖1
 n=int(input("請輸入偵測次數"))
 i=0
+flag = 0
 while i<n:
     ##角度轉弧度
     a1196=math.radians(角度1196.angle1196())
@@ -20,10 +21,6 @@ while i<n:
     print(x,y)
     畫圖1.a1(x,y)
     
-
-    flag=0
-    
-
     if x<200 and y<200:
         flag=1
         break
