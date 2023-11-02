@@ -38,5 +38,8 @@ with open('1196.csv', "w", newline='') as s:
     # 將配對後的資料逐列寫入 CSV 檔案
     w.writerows(data)
 
+if flag == 1:
+    print("到課")
+else:
+    print("未到課")
 
-print(flag)
