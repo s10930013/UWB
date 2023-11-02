@@ -1,2 +1,6 @@
-print('周宸平好笨')
-print('正比平聰明')
+import tkinter as tk
+window = tk.Tk()
+window.title("Hello World!")
+window.minsize(width=500, height=500)
+window.resizable(width=False, height=False)
+window.mainloop()
