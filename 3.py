@@ -56,4 +56,3 @@ plt.xlabel('Index')
 plt.ylabel('Value')
 
 # 顯示圖形
-plt.show()
