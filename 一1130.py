@@ -3,4 +3,4 @@ def function1():
 
 def function2():
     print("Function 2 from program 2")
-1
+11
