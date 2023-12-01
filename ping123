@@ -1,19 +1,19 @@
 import tkinter as tk
 from tkinter import simpledialog
-import requests
-import time
+
 import math
-import openpyxl
-import os
+import time
 import csv
-import numpy as np
-##import matplotlib.pyplot as plt
+
 import 角度1196
 import 距離1196
 import 座標1196
 import 畫圖1
 
-def measure1196(n):  
+def measure_and_display_result(n, root):
+    result_window = tk.Toplevel(root)  # 使用 Toplevel 來建立新的視窗
+    result_window.title("偵測結果")
+
     i = 0
     flag = 0
     while i < n:
@@ -22,7 +22,7 @@ def measure1196(n):
         x, y, x1196, y1196 = 座標1196.xy1196(d1196, a1196)
         print(f"座標: ({x}, {y})")
         畫圖1.a1(x, y)
-        
+
         if x < 200 and y < 200:
             flag = 1
             break
@@ -37,18 +37,18 @@ def measure1196(n):
         w = csv.writer(s)
         w.writerows(data)
 
-    if flag == 1:
-        print("1196到課")
-    else:
-        print("1196未到課")
+    result_text = "1196到課" if flag == 1 else "1196未到課"
+    result_label = tk.Label(result_window, text=result_text)
+    result_label.pack()
 
 def get_user_input():
     root = tk.Tk()
     root.withdraw()  # 隱藏主視窗
 
-    user_input = simpledialog.askinteger("Input", "請輸入偵測次數:")
+    user_input = simpledialog.askinteger("定位點名系統", "請輸入偵測次數:")
     if user_input is not None:
-        measure1196(user_input)
+        measure_and_display_result(user_input, root)
+        root.mainloop()
 
-# 執行程式，顯示GUI輸入框
+# 執行程式，顯示 GUI 輸入框
 get_user_input()
