@@ -6,9 +6,9 @@ import math
 import time
 import csv
 
-import 角度1196
-import 距離1196
-import 座標1196
+import 角度1225
+import 距離1225
+import 座標1225
 import 畫圖1
 
 def update_image_label(image_path, label):
@@ -27,13 +27,13 @@ def measure_and_display_result(n, root, image_label):
     i = 0
     flag = 0
     while i < n:
-        a1196 = math.radians(角度1196.angle1196())
-        d1196, a = 距離1196.distance1196()
-        x, y, x1196, y1196 = 座標1196.xy1196(d1196, a1196)
+        a1225 = math.radians(角度1225.angle1225())
+        d1225, a = 距離1225.distance1225()
+        x, y, x1225, y1225 = 座標1225.xy1225(d1225, a1225)
         print(f"座標: ({x}, {y})")
         畫圖1.a1(x, y)
 
-        if 250< x < 350 and 660 < y < 740:
+        if 200 < x < 300 and 200 < y < 300:
             flag = 1
             break
         i += 1
@@ -42,15 +42,15 @@ def measure_and_display_result(n, root, image_label):
         # Update the image label with the new image after each iteration
         update_image_label("example.png", image_label)
 
-    x1196.insert(0, "X座標")
-    y1196.insert(0, "Y座標")
-    data = list(zip(x1196, y1196))
+    x1225.insert(0, "X座標")
+    y1225.insert(0, "Y座標")
+    data = list(zip(x1225, y1225))
 
-    with open('1196.csv', "w", newline='') as s:
+    with open('1225.csv', "w", newline='') as s:
         w = csv.writer(s)
         w.writerows(data)
 
-    result_text = "1196到課" if flag == 1 else "1196未到課"
+    result_text = "1225到課" if flag == 1 else "1225未到課"
     result_label = tk.Label(result_window, text=result_text)
     result_label.pack()
 
