@@ -22,7 +22,7 @@ def measure1196():
         print(x,y)
         畫圖1.a1(x,y)
         
-        if 50<x<150 and 0<y<200:
+        if 250< x < 350 and 660 < y < 740:
             flag=1
             break
         i+=1
