@@ -1,6 +1,8 @@
 import math
 x1196=[]
 y1196=[]
+x2=[]
+y2=[]
 def xy1196(d1196,a1196):
     
 
@@ -13,7 +15,8 @@ def xy1196(d1196,a1196):
     x1196.append(x)
     y1196.append(y)
 
-    
-
-
-    return x,y,x1196,y1196
+    x1=300-x
+    y1=300-y
+    x2.append(x1)
+    y2.append(y1)
+    return x,y,x1196,y1196,x2,y2

@@ -29,7 +29,7 @@ def measure_and_display_result(n, root, image_label):
     while i < n:
         a1196 = math.radians(角度1196.angle1196())
         d1196, a = 距離1196.distance1196()
-        x, y, x1196, y1196 = 座標1196.xy1196(d1196, a1196)
+        x, y, x1196, y1196,x2,y2 = 座標1196.xy1196(d1196, a1196)
         print(f"座標: ({x}, {y})")
         畫圖1.a1(x, y)
 
@@ -44,7 +44,9 @@ def measure_and_display_result(n, root, image_label):
 
     x1196.insert(0, "X座標")
     y1196.insert(0, "Y座標")
-    data = list(zip(x1196, y1196))
+    x2.insert(0, "x誤差")
+    y2.insert(0, "y誤差")
+    data = list(zip(x1196, y1196,x2,y2))
 
     with open('1196.csv', "w", newline='') as s:
         w = csv.writer(s)
