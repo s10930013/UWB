@@ -15,7 +15,7 @@ def xy1196(d1196,a1196):
     x1196.append(x)
     y1196.append(y)
 
-    x1=300-x
+    x1=500-x
     y1=300-y
     x2.append(x1)
     y2.append(y1)
