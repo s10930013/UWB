@@ -29,7 +29,7 @@ def measure_and_display_result(n, root, image_label, result_label):
         print(f"座標: ({x}, {y})")
         畫圖1.a1(x, y)
 
-        if 250 < x < 350 and 660 < y < 740:
+        if  250 < x < 350 and 660 < y < 740:
             flag = 1
             break
         i += 1
@@ -37,6 +37,7 @@ def measure_and_display_result(n, root, image_label, result_label):
 
         # 在每次迭代後使用新圖像更新圖像標籤
         update_image_label("example.png", image_label)
+        root.update()  # 強制更新視窗
 
     x1196.insert(0, "X座標")
     y1196.insert(0, "Y座標")
@@ -55,16 +56,19 @@ def get_user_input():
     root = tk.Tk()
     root.title("偵測系統")
 
+    # 建立用於顯示圖像的標籤
+    image_label = tk.Label(root)
+    image_label.pack()
+
+    # 顯示初始圖片
+    update_image_label("example.png", image_label)
+
+    # 建立用於顯示結果的標籤
+    result_label = tk.Label(root, text="")
+    result_label.pack()
+
     user_input = simpledialog.askinteger("定位點名系統", "請輸入偵測次數:")
     if user_input is not None:
-        # 建立用於顯示圖像的標籤
-        image_label = tk.Label(root)
-        image_label.pack()
-
-        # 建立用於顯示結果的標籤
-        result_label = tk.Label(root, text="")
-        result_label.pack()
-
         measure_and_display_result(user_input, root, image_label, result_label)
         root.mainloop()
 

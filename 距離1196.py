@@ -1,4 +1,5 @@
 import requests
+import random
 a=[]
 def distance1196():
     
@@ -9,6 +10,7 @@ def distance1196():
     print(int(str3[0]))
     a.append(int(str3[0]))
     d1196=int(str3[0])
+    #d1196=int(random.randint(100,700))
 
 
 
