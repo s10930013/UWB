@@ -1,10 +1,21 @@
-import tkinter as tk
-winimport tkinter as tk
-window = tk.Tk()
-window.title('window')
-window.geometry('500x100') #寬度*高度
-label_1 = tk.Label(window, text='Hello World', bg='yellow', fg='#bd34eb',
-font=('Arial', 12))
-#label_1.grid(column=0, row=0)
-label_1.pack() # 預設位置’top’來配置標籤
-window.mainloop()
+import math
+x1225=[]
+y1225=[]
+x251=[]
+y251=[]
+def xy1225(d1225,a1225):
+    
+
+    x125 = d1225 * math.sin(a1225)
+    y125 = d1225 * math.cos(a1225)
+    x125=round(x125,2)+150
+    y125=round(y125,2)+17
+   
+    x1225.append(x125)
+    y1225.append(y125)
+
+    x1=500-x125
+    y1=300-y125
+    x251.append(x1)
+    y251.append(y1)
+    return x125,y125,x1225,y1225,x251,y251

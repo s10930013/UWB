@@ -1,7 +1,8 @@
 import requests
-a=[]
+import random
+
 def distance1225():
-    
+    '''
     response = requests.get('https://norgay.center/php/vilsnodes.php?loadranging=1&project_id=1')
     str1 = response.text.split('Tag1225')
     str2= str1[1].split('"')
@@ -9,8 +10,8 @@ def distance1225():
     print(int(str3[0]))
     a.append(int(str3[0]))
     d1225=int(str3[0])
+    '''
 
-
-
-    return d1225,a
+    d1225=int(random.randint(100,700))
+    return d1225
     
