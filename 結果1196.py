@@ -38,7 +38,7 @@ def measure_and_display_result(n, root, image_label):
             flag = 1  # 設置旗標以表示條件符合
             break
         i += 1
-        time.sleep(1)  # 暫停一秒
+        time.sleep(0.6)  # 暫停一秒
 
         # 在每次迭代後更新圖片標籤
         update_image_label("example.png", image_label)

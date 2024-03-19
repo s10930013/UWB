@@ -27,7 +27,7 @@ def measure_and_display_result(n, root, image_label, result_label, coord_label):
 
         coord_label.config(text=f"1225座標: ({x125}, {y125})")
 
-        if 250 < x125 < 350 and 100 < y125 < 740:   #設定座位範圍
+        if 2 < x125 < 3 and 1 < y125 < 7:   #設定座位範圍
             flag = 1
             break
         i += 1

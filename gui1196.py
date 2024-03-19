@@ -31,11 +31,11 @@ def measure_and_display_result(n, root, image_label, result_label, coord_label):
 
         coord_label.config(text=f"1196座標: ({x196}, {y196})")
 
-        if 250 < x196 < 350 and 660 < y196 < 740:   #設定座位範圍
+        if 280 < x196 < 320 and 1 < y196 < 2:   #設定座位範圍
             flag = 1
             break
         i += 1
-        time.sleep(1)
+        time.sleep(0.6)
 
         # 在每次迭代後使用新圖像更新圖像標籤
         update_image_label("example.png", image_label)
