@@ -60,7 +60,7 @@ def on_exit(root):
     
 def get_user_input():
     root = tk.Tk()
-    root.title("偵測系統")
+    root.title("偵測點名系統")
 
     # 建立用於顯示圖像的標籤
     image_label = tk.Label(root)
