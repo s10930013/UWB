@@ -3,9 +3,6 @@ from tkinter import simpledialog
 from PIL import Image, ImageTk
 import math
 import time
-import csv
-import random
-
 import 角度1196
 import 距離1196
 import 座標1196
@@ -31,7 +28,7 @@ def measure_and_display_result(n, root, image_label, result_label, coord_label):
         x196, y196, x1196, y1196, x11962, y11962 = 座標1196.xy1196(d1196, a1196)
         print(f"1196座標: ({x196}, {y196})")
       
-        if 280 < x196 < 700 and 1 < y196 < 700:   # 設定座位範圍
+        if 280 < x196 < 700 and 1 < y196 < 700:   # 設定1196座位範圍
             flag1196 = 1
             
         # 檢測 tag 1225
@@ -45,7 +42,7 @@ def measure_and_display_result(n, root, image_label, result_label, coord_label):
         
         coord_label.config(text=f"1225座標: ({x125}, {y125})\n1196座標: ({x196}, {y196})")
 
-        if 2 < x125 < 3 and 1 < y125 < 7:   # 設定 1225 座位範圍
+        if 2 < x125 < 700 and 1 < y125 < 700:   # 設定 1225 座位範圍
             flag1225 = 1
 
         if flag1196 == 1 and flag1225 == 1:
