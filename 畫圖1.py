@@ -4,7 +4,7 @@ def a1(x,y):
     img=plt.imread("m.png")
     fig,ax=plt.subplots()
     # 指定图片的高度和宽度
-    ax.imshow(img,extent=[0,600,0,880])
+    ax.imshow(img,extent=[0,616,0,780])
     plt.xlim(0,616)
     plt.ylim(0,780)
 
