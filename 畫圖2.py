@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-def a1(x,y):
+def a1(x,y,x1,y1):
    # 插入背景图片
     img=plt.imread("m.png")
     fig,ax=plt.subplots()
@@ -9,7 +9,7 @@ def a1(x,y):
     plt.ylim(0,780)
 
     plt.scatter(x,y)
-    
+    plt.scatter(x1,y1)
     save_path = 'example.png'
     plt.savefig(save_path)
     plt.clf()
