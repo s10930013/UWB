@@ -40,7 +40,7 @@ def measure_and_display_result(n, root, image_label, result_label, coord_label):
         # 繪製 tag 1307 的座標 繪製 tag 1196 的座標
         畫圖2.a1(x307, y307, x196, y196) 
         
-        coord_label.config(text=f"1307座標: ({x307}, {y307})\n1196座標: ({x196}, {y196})")
+        coord_label.config(text=f"1307座標(藍): ({x307}, {y307})\n1196座標(橘): ({x196}, {y196})")
 
         if 2 < x307 < 3 and 1 < y307 < 7:   # 設定 1307 座位範圍  
             flag1307 = 1  
