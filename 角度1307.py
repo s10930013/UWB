@@ -9,5 +9,5 @@ def angle1307():
        '''
     
 
-    a1307=float(60)
+    a1307=float(30)
     return a1307
