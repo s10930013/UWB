@@ -11,6 +11,6 @@ def angle1196():
     #print(a1196)
      '''
 
-    a1196=float(60)
+    a1196=float(40)
     
     return a1196
