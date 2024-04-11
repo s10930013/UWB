@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 x_error = []
 y_error = []
 
-with open('F1.csv', 'r') as file:
+with open('E1.csv', 'r') as file:
     reader = csv.reader(file)
     next(reader)  # 跳過標題行
     for row in reader:
