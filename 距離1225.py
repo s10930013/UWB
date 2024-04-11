@@ -12,6 +12,6 @@ def distance1225():
     d1225=int(str3[0])
     '''
 
-    d1225=int(random.randint(100,700))
+    d1225=int(random.randint(300,330))
     return d1225
     

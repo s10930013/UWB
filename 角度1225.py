@@ -8,6 +8,6 @@ def angle1225():
     a1225=float(str3[0])
     #print(a1225)
     '''
-    a1225=float(50)
+    a1225=float(30)
 
     return a1225
