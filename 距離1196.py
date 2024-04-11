@@ -13,7 +13,7 @@ def distance1196():
     '''
 
 
-     d1196=int(random.randint(400,430))
+     d1196=int(random.randint(500,520))
 
 
 

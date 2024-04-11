@@ -13,6 +13,6 @@ def distance1307():
     d1307=int(str3[0])
     '''
     
-    d1307=int(random.randint(300,350))
+    d1307=int(random.randint(300,330))
     return d1307
     
