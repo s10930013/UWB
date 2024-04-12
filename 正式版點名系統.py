@@ -42,7 +42,7 @@ def measure_and_display_result(n, root, image_label, result_label, coord_label):
         
         coord_label.config(text=f"1307座標(藍): ({x307}, {y307})\n1196座標(橘): ({x196}, {y196})")
 
-        if 2 < x307 < 3 and 1 < y307 < 7:   # 設定 1307 座位範圍  
+        if 280 < x307 < 320 and 480 < y307 < 500:   # 設定 1307 座位範圍  
             flag1307 = 1  
 
         if flag1196 == 1 and flag1307 == 1:  
