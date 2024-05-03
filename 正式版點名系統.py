@@ -28,7 +28,7 @@ def measure_and_display_result(n, root, image_label, result_label, coord_label):
         x196, y196, x1196, y1196, x11962, y11962 = 座標1196.xy1196(d1196, a1196)
         print(f"1196座標: ({x196}, {y196})")
       
-        if 280 < x196 < 320 and 1 < y196 < 2:   # 設定座位範圍
+        if 320 < x196 < 400 and 260 < y196 < 340:   # 設定座位範圍
             flag1196 = 1
             
         # 檢測 tag 1307  
